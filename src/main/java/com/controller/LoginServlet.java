@@ -13,7 +13,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jsp/login.html")
+        req.getRequestDispatcher("/WEB-INF/experiment05/login.html")
                 .forward(req, resp);
     }
 
