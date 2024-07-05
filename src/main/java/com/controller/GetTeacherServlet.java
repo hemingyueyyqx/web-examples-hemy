@@ -15,7 +15,7 @@ public class GetTeacherServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         var tid = req.getParameter("tid");
         var teacher = DatabaseUtils.getTeacher(Integer.parseInt(tid));
-        DatabaseUtils.getTeacher(Integer.parseInt(tid));
+        //DatabaseUtils.getTeacher(Integer.parseInt(tid));
         req.setAttribute("teacher", teacher);
         req.setAttribute("titles", DatabaseUtils.listTitles());
         req.setAttribute("courses", DatabaseUtils.listCourses());

@@ -5,4 +5,5 @@ create table if not exists `user`
     insert_time datetime not null default  current_timestamp,
     update_time datetime not null default  current_timestamp on update current_timestamp
 
-)
+);
+drop table user;
